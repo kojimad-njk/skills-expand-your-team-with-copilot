@@ -664,3 +664,124 @@ footer {
 #logout-button:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
+
+/* Social Sharing Buttons */
+.social-sharing {
+  margin: 10px 0;
+  padding-top: 8px;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.share-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.share-buttons {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.share-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background-color: var(--background);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+  font-size: 0.75rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.share-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.share-btn .share-icon {
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+.share-twitter {
+  background-color: #000000;
+  color: white;
+  border-color: #000000;
+}
+
+.share-twitter:hover {
+  background-color: #1a1a1a;
+}
+
+.share-facebook {
+  background-color: #1877f2;
+  color: white;
+  border-color: #1877f2;
+}
+
+.share-facebook:hover {
+  background-color: #0c63d4;
+}
+
+.share-facebook .share-icon {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.share-email {
+  background-color: #ea4335;
+  color: white;
+  border-color: #ea4335;
+}
+
+.share-email:hover {
+  background-color: #d33426;
+}
+
+.share-copy {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.share-copy:hover {
+  background-color: var(--primary-light);
+}
+
+/* Message styling adjustments */
+.message {
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+.message.success {
+  background-color: var(--success-light);
+  color: var(--success);
+  border: 1px solid var(--success);
+}
+
+.message.error {
+  background-color: var(--error-light);
+  color: var(--error);
+  border: 1px solid var(--error);
+}
+
+.message.info {
+  background-color: var(--info-light);
+  color: var(--info);
+  border: 1px solid var(--info);
+}
